@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Wizard Duel</string>
+    <string name="ravenclaw">Ravenclaw</string>
+    <string name="counter">0</string>
+    <string name="stupefy">Stupefy</string>
+    <string name="expulso">Expulso</string>
+    <string name="levicorpus">Levicorpus</string>
+    <string name="expelliarmus">Expelliarmus</string>
+    <string name="gryffindor">Gryffindor</string>
+    <string name="reset">start over</string>
+</resources>

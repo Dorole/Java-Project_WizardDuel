@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stars"
+    android:orientation="vertical"
+    tools:context="com.example.android.wizardduel.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/LayoutStyle">
+
+            <TextView
+                style="@style/HouseName"
+                android:text="@string/ravenclaw"
+                android:textColor="#5193ac" />
+
+            <TextView
+                android:id="@+id/RavenCounter"
+                style="@style/Score"
+                android:text="@string/counter" />
+
+            <Button
+                android:id="@+id/RavenStupefy"
+                style="@style/RavenclawButton"
+                android:onClick="score_4_R"
+                android:text="@string/stupefy" />
+
+            <Button
+                android:id="@+id/RavenExpulso"
+                style="@style/RavenclawButton"
+                android:onClick="score_3_R"
+                android:text="@string/expulso" />
+
+            <Button
+                android:id="@+id/RavenLevicorpus"
+                style="@style/RavenclawButton"
+                android:onClick="score_2_R"
+                android:text="@string/levicorpus" />
+
+            <Button
+                android:id="@+id/RavenExpelliarmus"
+                style="@style/RavenclawButton"
+                android:onClick="score_1_R"
+                android:text="@string/expelliarmus" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/LayoutStyle">
+
+            <TextView
+                style="@style/HouseName"
+                android:text="@string/gryffindor"
+                android:textColor="#e43701" />
+
+            <TextView
+                android:id="@+id/GryffCounter"
+                style="@style/Score"
+                android:text="@string/counter" />
+
+            <Button
+                style="@style/GryffindorButton"
+                android:onClick="score_4_G"
+                android:text="@string/stupefy" />
+
+            <Button
+                android:id="@+id/GryffExpulso"
+                style="@style/GryffindorButton"
+                android:onClick="score_3_G"
+                android:text="@string/expulso" />
+
+            <Button
+                style="@style/GryffindorButton"
+                android:onClick="score_2_G"
+                android:text="@string/levicorpus" />
+
+            <Button
+                style="@style/GryffindorButton"
+                android:onClick="score_1_G"
+                android:text="@string/expelliarmus" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            style="@style/resetButton"
+            android:onClick="resetScore"
+            android:text="@string/reset" />
+
+    </RelativeLayout>
+
+</LinearLayout>
